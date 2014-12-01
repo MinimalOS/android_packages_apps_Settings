@@ -382,4 +382,6 @@
     <string name="device_maintainers_title">Devices and Maintainers</string>
     <string name="device_maintainers_title_summary">List of Supported devices by MinimalOS maintainers</string>
 
+    <string name="mem_info">RAM</string>
+
 </resources>
