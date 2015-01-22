@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     Copyright (C) 2015 crDroid Android
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Phone brand -->
+    <string name="device_category_google_title">GOOGLE</string>
+    <string name="device_category_sony_title">SONY</string>
+    <string name="device_category_motorola_title">MOTOROLA</string>
+    <string name="device_category_oneplus_title">ONE PLUS</string>
+
+    <!-- Supported Devices and Maintainers -->
+
+    <!-- Google devices -->
+    <string name="device_google_n4">Google Nexus 4</string>
+    <string name="device_google_n4_summary">Mako \nMaintainer - Aldrin Holmes</string>
+
+    <string name="device_google_n5">Google Nexus 5</string>
+    <string name="device_google_n5_summary">Hammerhead \nMaintainer - George G</string>
+
+    <string name="device_google_n6">Google Nexus 6</string>
+    <string name="device_google_n6_summary">Shamu \nMaintainer - Brian Gill</string>
+
+    <!-- Sony devices -->
+    <string name="device_sony_sola">Sony Xperia Sola</string>
+    <string name="device_sony_sola_summary">Pepper \nMaintainer - Chinmay Kunkikar</string>
+
+    <!-- OnePlus devices -->
+    <string name="device_oneplus_one">One Plus One</string>
+    <string name="device_oneplus_one_summary">Bacon \nMaintainer - Safvan Patel</string>
+
+</resources>
