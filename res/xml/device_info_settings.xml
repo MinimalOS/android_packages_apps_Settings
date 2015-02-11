@@ -32,10 +32,10 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </PreferenceScreen>
 
-        <!-- Changelog -->
-        <PreferenceScreen android:key="changelog"
-                android:title="@string/changelog_crdroid_title"
-                android:fragment="com.android.settings.crdroid.Changelog" />
+        <!-- About crDroid -->
+        <PreferenceScreen android:key="about"
+                android:title="@string/about_crdroid"
+                android:fragment="com.android.settings.crdroid.About" />
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
