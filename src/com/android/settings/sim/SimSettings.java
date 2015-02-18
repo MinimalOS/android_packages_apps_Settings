@@ -27,6 +27,7 @@ import android.os.SystemProperties;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings.SettingNotFoundException;
 import android.telephony.SubscriptionInfo;
@@ -63,6 +64,8 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
     private static final String KEY_SMS = "sim_sms";
     private static final String KEY_ACTIVITIES = "activities";
     private static final String KEY_PRIMARY_SUB_SELECT = "select_primary_sub";
+    private static final String SIM_DATA_CATEGORY = "sim_data_category";
+    private static final String SIM_DATA_KEY = "sim_data";
 
     private static final int EVT_UPDATE = 1;
 
@@ -90,6 +93,7 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
     private PhoneStateListener[] mPhoneStateListener;
     private boolean mDataDisableToastDisplayed = false;
     private SubscriptionManager mSubscriptionManager;
+    private TelephonyManager mTelephonyManager;
 
     public SimSettings() {
         super(DISALLOW_CONFIG_SIM);
@@ -101,14 +105,14 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
         Log.d(TAG,"on onCreate");
 
         mSubscriptionManager = SubscriptionManager.from(getActivity());
-        final TelephonyManager tm =
-                    (TelephonyManager) getActivity().getSystemService(Context.TELEPHONY_SERVICE);
+        mTelephonyManager = (TelephonyManager) getActivity()
+                .getSystemService(Context.TELEPHONY_SERVICE);
 
         if (mSubInfoList == null) {
             mSubInfoList = mSubscriptionManager.getActiveSubscriptionInfoList();
         }
 
-        mNumSlots = tm.getSimCount();
+        mNumSlots = mTelephonyManager.getSimCount();
         mPhoneCount = TelephonyManager.getDefault().getPhoneCount();
         mCallState = new int[mPhoneCount];
         mPhoneStateListener = new PhoneStateListener[mPhoneCount];
@@ -135,11 +139,9 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
     }
 
     private void unRegisterPhoneStateListener() {
-        TelephonyManager tm =
-                (TelephonyManager) getActivity().getSystemService(Context.TELEPHONY_SERVICE);
         for (int i = 0; i < mPhoneCount; i++) {
             if (mPhoneStateListener[i] != null) {
-                tm.listen(mPhoneStateListener[i], PhoneStateListener.LISTEN_NONE);
+                mTelephonyManager.listen(mPhoneStateListener[i], PhoneStateListener.LISTEN_NONE);
                 mPhoneStateListener[i] = null;
             }
         }
@@ -175,11 +177,23 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
                 // Refresh UI whenever subinfo record gets changed
                 updateAllOptions();
             }
+            final SwitchPreference dataToggle = (SwitchPreference) findPreference(SIM_DATA_KEY);
+            dataToggle.setChecked(mTelephonyManager.getDataEnabled());
         }
     };
 
     private void createPreferences() {
         addPreferencesFromResource(R.xml.sim_settings);
+
+        final SwitchPreference dataToggle = (SwitchPreference) findPreference(SIM_DATA_KEY);
+        dataToggle.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+           @Override
+           public boolean onPreferenceChange(Preference preference, Object newValue) {
+                final boolean dataEnabled = (Boolean) newValue;
+                mTelephonyManager.setDataEnabled(dataEnabled);
+                return true;
+            }
+        });
 
         mPrimarySubSelect = (Preference) findPreference(KEY_PRIMARY_SUB_SELECT);
         final PreferenceCategory simEnablers =
@@ -212,14 +226,12 @@ public class SimSettings extends RestrictedSettingsFragment implements Indexable
     }
 
     private void listen() {
-        TelephonyManager tm =
-                (TelephonyManager) getActivity().getSystemService(Context.TELEPHONY_SERVICE);
         for (int i = 0; i < mPhoneCount; i++) {
             int[] subId = mSubscriptionManager.getSubId(i);
             if (subId != null) {
                 if (subId[0] > 0) {
-                    mCallState[i] = tm.getCallState(subId[0]);
-                    tm.listen(getPhoneStateListener(i, subId[0]),
+                    mCallState[i] = mTelephonyManager.getCallState(subId[0]);
+                    mTelephonyManager.listen(getPhoneStateListener(i, subId[0]),
                             PhoneStateListener.LISTEN_CALL_STATE);
                 }
             }
