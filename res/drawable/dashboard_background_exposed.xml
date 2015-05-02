@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
@@ -11,3 +12,17 @@
     </item>
 
 </ripple>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape  android:shape="rectangle">
+
+            <solid android:color="@color/exposed_bg_dark" />
+
+        </shape>
+    </item>
+</layer-list>
+
+>>>>>>> 3f6d0b7... Exposing Settings backgrounds for more theming options, while not impacted stock.

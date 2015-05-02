@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape  android:shape="rectangle">
@@ -6,3 +7,14 @@
     </item>
 </layer-list>
 
+=======
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape  android:shape="rectangle">
+
+            <solid android:color="@color/dashboard_background_color" />
+
+        </shape>
+    </item>
+</layer-list>
+>>>>>>> 3f6d0b7... Exposing Settings backgrounds for more theming options, while not impacted stock.
