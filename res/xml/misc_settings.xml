@@ -82,20 +82,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="custom_animations"
-        android:title="@string/custom_animations" >
-
-         <!-- Toast Animation -->
-         <ListPreference
-           android:key="toast_animation"
-           android:title="@string/toast_animation_title"
-           android:entries="@array/toast_animation_entries"
-           android:entryValues="@array/toast_animation_values"
-           android:persistent="false" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="do_whatever_you_want_to_do_man"
         android:title="@string/random_stuff" >
 

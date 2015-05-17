@@ -41,8 +41,6 @@ import com.android.settings.SettingsPreferenceFragment;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
-
 import com.android.settings.R;
 
 public class MiscSettings extends SettingsPreferenceFragment implements
@@ -52,14 +50,12 @@ Preference.OnPreferenceChangeListener {
 
     private static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
-    private static final String KEY_TOAST_ANIMATION = "toast_animation";
     private static final String KEY_LCD_DENSITY = "lcd_density";
 
     private Context mContext;
 
     private SwitchPreference mRecentsClearAll;
     private ListPreference mRecentsClearAllLocation;
-    private ListPreference mToastAnimation;
     private ListPreference mLcdDensityPreference;
 
     @Override
@@ -69,17 +65,7 @@ Preference.OnPreferenceChangeListener {
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
-
         mContext = getActivity().getApplicationContext();
-
-        // Toast Animations
-        mToastAnimation = (ListPreference) findPreference(KEY_TOAST_ANIMATION);
-        mToastAnimation.setSummary(mToastAnimation.getEntry());
-        int CurrentToastAnimation = Settings.System.getInt(getContentResolver(), Settings.System.TOAST_ANIMATION, 1);
-        mToastAnimation.setValueIndex(CurrentToastAnimation); //set to index of default value
-        mToastAnimation.setSummary(mToastAnimation.getEntries()[CurrentToastAnimation]);
-        mToastAnimation.setOnPreferenceChangeListener(this);
-
         mRecentsClearAll = (SwitchPreference) prefSet.findPreference(SHOW_CLEAR_ALL_RECENTS);
         mRecentsClearAll.setChecked(Settings.System.getIntForUser(resolver,
         Settings.System.SHOW_CLEAR_ALL_RECENTS, 1, UserHandle.USER_CURRENT) == 1);
@@ -145,12 +131,6 @@ Preference.OnPreferenceChangeListener {
             Settings.System.putIntForUser(getActivity().getContentResolver(),
             Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
             updateRecentsLocation(location);
-            return true;
-        } else if (preference == mToastAnimation) {
-            int index = mToastAnimation.findIndexOfValue((String) objValue);
-            Settings.System.putString(getContentResolver(), Settings.System.TOAST_ANIMATION, (String) objValue);
-            mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
-            Toast.makeText(mContext, "Toast Test", Toast.LENGTH_SHORT).show();
             return true;
         } else if (preference == mLcdDensityPreference) {
             try {
