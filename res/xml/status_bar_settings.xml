@@ -43,12 +43,6 @@
         android:summary="@string/double_tap_to_sleep_summary"
         android:defaultValue="true" />
 
-	<!-- Network traffic -->
-    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-        android:key="network_traffic_state"
-        android:title="@string/network_traffic_indicator_title"
-        android:summary="@string/network_traffic_indicator_summary" />
-
     <PreferenceCategory
         android:title="@string/status_bar_clock_style">
 

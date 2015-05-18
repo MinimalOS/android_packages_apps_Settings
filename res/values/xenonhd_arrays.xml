@@ -259,7 +259,6 @@ limitations under the License.
         <item>5</item>
         <item>6</item>
     </string-array>
-<<<<<<< HEAD
 
     <!-- Less Notification sounds -->
     <string-array name="less_notification_sounds_entries">
@@ -288,4 +287,3 @@ limitations under the License.
         <item>300000</item>
     </string-array>
 </resources>
-
