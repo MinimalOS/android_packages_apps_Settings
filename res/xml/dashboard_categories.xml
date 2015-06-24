@@ -16,7 +16,7 @@
 
 <dashboard-categories
         xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
     <!-- WIRELESS and NETWORKS -->
     <dashboard-category
@@ -54,12 +54,11 @@
                 android:id="@+id/mobile_networks"
                 android:title="@string/network_settings_title"
                 android:icon="@drawable/ic_settings_cellular"
-	settings:switchClass="com.android.settings.dashboard.MobileNetworksEnabler"
-		>
+                settings:switchClass="com.android.settings.dashboard.MobileNetworksEnabler" >
             <intent
-                    android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.phone"
-                    android:targetClass="com.android.phone.MobileNetworkSettings" />
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.phone"
+                android:targetClass="com.android.phone.MobileNetworkSettings" />
         </dashboard-tile>
 
         <!-- Data Usage -->
@@ -104,7 +103,7 @@
                 android:id="@+id/misc_settings"
                 android:title="@string/misc_settings_title"
                 android:fragment="com.android.settings.xenonhd.MiscSettings"
-                android:icon="@drawable/ic_settings_interface"
+                android:icon="@drawable/ic_settings_minimal"
                 />
 
         <!-- Gestures -->
