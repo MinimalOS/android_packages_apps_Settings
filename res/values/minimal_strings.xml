@@ -327,8 +327,4 @@
     <string name="changelog_crdroid_title">Changelog</string>
     <string name="changelog_crdroid_error">Unable to load changelog</string>
 
-    <!-- Notification ticker -->
-    <string name="status_bar_ticker_title">Notification ticker</string>
-    <string name="status_bar_ticker_summary">Notification text animation in the statusbar</string>
 </resources>
-
