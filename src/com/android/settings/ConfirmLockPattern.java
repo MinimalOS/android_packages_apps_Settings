@@ -124,8 +124,6 @@ public class ConfirmLockPattern extends SettingsActivity {
             mLockPatternView = (LockPatternView) view.findViewById(R.id.lockPattern);
             mFooterTextView = (TextView) view.findViewById(R.id.footerText);
 
-            mLockPatternView.setLockPatternUtils(mLockPatternUtils);
-
             // make it so unhandled touch events within the unlock screen go to the
             // lock pattern view.
             final LinearLayoutWithDefaultTouchRecepient topLayout
