@@ -54,21 +54,12 @@ public class PrivacySettings extends SettingsPreferenceFragment implements Index
         // Add package manager to check if features are available
         PackageManager pm = getPackageManager();
 
-        // WhisperPush
-        // Only if device has telephony support and has WhisperPush installed.
-        if (!isWhisperPushable(getActivity(), pm)) {
-            // No telephony, remove dependent options
-            PreferenceScreen root = getPreferenceScreen();
-            root.removePreference(mWhisperPush);
-        }
-
         // Determine options based on device telephony support
         if (!pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) {
             // No telephony, remove dependent options
             PreferenceScreen root = getPreferenceScreen();
             root.removePreference(mBlacklist);
         }
-
     }
 
     private static boolean isWhisperPushable(Context context, PackageManager pm) {
