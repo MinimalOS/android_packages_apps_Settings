@@ -32,21 +32,21 @@
 
              <Preference
                  android:key="device_google_n4"
-                 android:icon="@drawable/minimal_devices"
+                 android:icon="@drawable/minimal_mako"
                  android:title="@string/device_google_n4"
                  android:summary="@string/device_google_n4_summary"
                  android:selectable="false" />
 
              <Preference
                  android:key="device_google_n5"
-                 android:icon="@drawable/minimal_devices"
+                 android:icon="@drawable/minimal_hammerhead"
                  android:title="@string/device_google_n5"
                  android:summary="@string/device_google_n5_summary"
                  android:selectable="false" />
 
              <Preference
                  android:key="device_google_n6"
-                 android:icon="@drawable/minimal_devices"
+                 android:icon="@drawable/minimal_shamu"
                  android:title="@string/device_google_n6"
                  android:summary="@string/device_google_n6_summary"
                  android:selectable="false" />
@@ -59,7 +59,7 @@
 
              <Preference
                  android:key="device_sony_sola"
-                 android:icon="@drawable/minimal_devices"
+                 android:icon="@drawable/minimal_pepper"
                  android:title="@string/device_sony_sola"
                  android:summary="@string/device_sony_sola_summary"
                  android:selectable="false" />
@@ -72,7 +72,7 @@
 
              <Preference
                  android:key="device_oneplus_one"
-                 android:icon="@drawable/minimal_devices"
+                 android:icon="@drawable/minimal_bacon"
                  android:title="@string/device_oneplus_one"
                  android:summary="@string/device_oneplus_one_summary"
                  android:selectable="false" />
