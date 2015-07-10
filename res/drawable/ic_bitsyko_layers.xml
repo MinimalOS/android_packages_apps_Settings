@@ -1,39 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-/*
- * Copyright 2014, The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+  ** ORGINAL VECTOR DONE BY xWASABI alias Branden M.
+  ** 07.10.15
 -->
-
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24">
+android:width="24dp"
+android:height="24dp"
+android:viewportWidth="24"
+android:viewportHeight="24">
 
-    <group
-            android:translateX="0.27280934"
-            android:translateY="1.0840165">
-        <path
-            android:fillColor="@*android:color/material_deep_teal_500"
-            android:pathData="M 11.652,12.667 L 23.303,6.333 11.652,0 0,6.333 Z" />
-        <path
-            android:fillColor="@*android:color/material_deep_teal_500"
-            android:pathData="M 2.166,9.555 L 0,10.732 11.652,17.063 23.303,10.732 21.137,9.555 11.652,14.709 Z" />
-        <path
-            android:fillColor="@*android:color/material_deep_teal_500"
-            android:pathData="M 2.166,13.952 L 0,15.127 l 11.652,6.334 11.651,-6.334 -2.166,-1.175-9.485,5.155 z" />
-    </group>
-</vector> 
+<path
+android:fillColor="@android:color/material_deep_teal_500"
+android:pathData="M18 3.984h3v8.016h-8.016v9q0 0.422-0.281 0.703t-0.703 0.281h-2.016q-0.422
+0-0.703-0.281t-0.281-0.703v-11.016h9.984v-3.984h-0.984v0.984q0 0.422-0.281
+0.727t-0.703 0.305h-12q-0.422 0-0.727-0.305t-0.305-0.727v-3.984q0-0.422
+0.305-0.703t0.727-0.281h12q0.422 0 0.703 0.281t0.281 0.703v0.984z" />
+</vector>
