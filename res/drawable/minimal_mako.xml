@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
 android:width="32dp"
-android:height="32dp"
+android:height="35dp"
 android:viewportWidth="60"
 android:viewportHeight="48">
 <group
 android:translateY="0"
-android:translateX="12">
+android:translateX="10">
 <path
 android:fillColor="@color/theme_accent"
 android:pathData="M 16.660581,24.140711 l 0,-15.8262709 14.300848,0 14.300847,0 0,15.8262709
