@@ -2137,7 +2137,7 @@
     <string name="device_info_settings" product="default">Phone status</string>
 
     <!-- About phone screen, list item title.  Takes the user to the screen for seeing and installing system updates. [CHAR LIMIT=40] -->
-    <string name="system_update_settings_list_item_title">System updates</string>
+    <string name="system_update_settings_list_item_title">Minimal updates</string>
     <!-- About phone screen, list item summary.  Takes the user to the screen for seeing and installing system updates. [CHAR LIMIT=40] -->
     <string name="system_update_settings_list_item_summary">""</string>
 
