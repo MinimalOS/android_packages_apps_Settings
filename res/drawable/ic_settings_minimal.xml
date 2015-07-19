@@ -9,8 +9,8 @@
             android:translateX="-31.475706"
             android:translateY="-8.868279">
         <path
-            android:fillColor="#009688"
-            android:strokeColor="#009688"
+            android:fillColor="@color/theme_accent"
+            android:strokeColor="@color/theme_accent"
             android:strokeWidth="1"
             android:pathData="M 74.166586,26.337196 q 0,0.175782 -0.09766,0.546875 -0.09766,0.371094
 -0.292969,0.859375 -0.175781,0.46875 -0.429688,1.015625 -0.234375,0.527344
