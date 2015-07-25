@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012-2015 Minimal OS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Réinitialiser</string>
+    <string name="add">Ajouter</string>
+    <string name="attention">Attention</string>
+    <string name="enabled">Activé</string>
+    <string name="default_string">Par défaut</string>
+    <string name="choose_app">Choisir l'\application</string>
+    <string name="attention">Attention</string>
+
+    <!-- ROMSettings -->
+    <string name="misc_settings_title">Minimal tweaks</string>
+
+    <!-- Sound settings -->
+    <string name="advanced_sound_title">Options avancées</string>
+    <string name="sound_title">Son</string>
+
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">Volume de casque sécurisé</string>
+    <string name="safe_headset_volume_summary">Empêche d'\avoir le volume du casque trop fort lors du premier branchement</string>
+    <string name="safe_headset_volume_warning_dialog_text">L'\écoute à volume élévé pendant une longue période peut endommager votre ouïe. Désactivez-le avec prudence.</string>
+
+    <!-- Camera sound switch -->
+    <string name="camera_sounds_title">Son de l'\obturateur de la caméra</string>
+    <string name="camera_sounds_summary">Activer le système du son de l'\obturateur de la caméra</string>
+    <string name="camera_sound_warning_dialog_text">Désactiver le son de l'\obturateur de la caméra est illégal dans certaines régions ! S'il vous plaît, vérifier la législation applicable dans votre pays.</string>
+
+    <!-- Overview settings -->
+    <string name="overview_pref_title">Multitâche</string>
+    <string name="overview_title">Multitâche</string>
+    <string name="overview_settings">Paramètres du multitâche</string>
+    <string name="show_clear_all_overview_button_title">Bouton pour tout effacer dans le multitâche</string>
+    <string name="show_clear_all_overview_button_summary">Afficher le bouton pour tout effacer dans le multitâche</string>
+    <string name="overview_clear_all_location_title">Position du bouton pour tout effacer dans le multitâche</string>
+    <string name="overview_clear_all_location_top_right">En haut à droite</string>
+    <string name="overview_clear_all_location_top_left">En haut à gauche</string>
+    <string name="overview_clear_all_location_top_center">En haut au centre</string>
+    <string name="overview_clear_all_location_bottom_right">En bas à droite</string>
+    <string name="overview_clear_all_location_bottom_left">En bas à gauche</string>
+    <string name="overview_clear_all_location_bottom_center">En bas au centre</string>
+    <string name="overview_clear_all_dismiss_all_title">Supprimer toutes les tâches</string>
+    <string name="overview_clear_all_dismiss_all_summary">Choisissez de supprimer toutes les tâches ou d'ignorer la tâche au premier plan.</string>
+
+    <!-- Show/Hide Search Bar in Overview -->
+    <string name="overview_show_searchbar">Afficher la barre de recherche dans le multitâche</string>
+    <string name="keywords_overview_show_searchbar">Permet de désactiver activer afficher cacher la barre de recherche dans le multitâche</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Pipette à couleurs</string>
+    <string name="press_color_to_apply">Appuyez sur la couleur ci-dessous pour appliquer</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Par défaut</string>
+
+    <!-- Status bar | Clock -->
+    <string name="status_bar_clock_style">Style de l'\horloge</string>
+    <string name="status_bar_clock">Horloge et date</string>
+    <string name="status_bar_clock_title">Horloge et style de date</string>
+    <string name="clock_title_enable">Alignement</string>
+    <string name="clock_enabled">Activé</string>
+    <string name="clock_disabled">Désactivé</string>
+    <string name="clock_color_title">Couleurs</string>
+    <string name="status_bar_clock_style_reset">Réinitialiser couleurs</string>
+    <string name="status_bar_show_clock_title">Afficher l'\horloge et la date</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">Horlge 24 heures activé</string>
+    <string name="enable_clock_weekday">Jour de la semaine</string>
+    <string name="enable_clock_weekday_summary">Abrégé le jour de la semaine avant l'\heure</string>
+    <string name="right_clock">Horloge à droite</string>
+    <string name="center_clock">Horloge centré</string>
+    <string name="left_clock">Horloge à gauche</string>
+    <string name="dont_show">Ne pas montrer</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Afficher la date personnalisé avant l'horloge</string>
+    <string name="clock_date_style">Style de date</string>
+    <string name="clock_date_format">Format de la date</string>
+    <string name="clock_date_string_edittext_title">Doit être dans le format dd/MM/yy</string>
+    <string name="clock_date_string_edittext_summary">Entrer string</string>
+    <string name="am_pm_clock_normal">Normal taille de police</string>
+    <string name="am_pm_clock_small">Petite taille de police</string>
+    <string name="am_pm_clock_none">Ne pas afficher</string>
+    <string name="clock_date_display_none">Ne pas afficher</string>
+    <string name="clock_date_display_small">Petite taille de police</string>
+    <string name="clock_date_display_normal">Normal taille de police</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Minuscule</string>
+    <string name="clock_date_style_uppercase">Majuscule</string>
+    <string name="clock_date_format_custom">Format java personnalisée</string>
+    <string name="status_bar_clock_style_reset_message">Réinitialiser la couleur de l'\horloge ?</string>
+
+    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
+    <string name="supersu_title">SuperSU</string>
+
+    <!-- QuickSettings tiles -->
+    <string name="qs_battery_saver_tile">Economiseur de batterie</string>
+    <string name="qs_brightness_tile">Luminosité</string>
+    <string name="qs_expanded_desktop_tile">Bureau étendu</string>
+    <string name="qs_notifications_tile">Notifications</string>
+    <string name="qs_screen_off_tile">Eteindre l'\écran</string>
+    <string name="qs_screenshot_tile">Screenshot</string>
+    <string name="qs_screenrecord_tile">Enregistrer l'\écran</string>
+    <string name="qs_sync_tile">Sync</string>
+    <string name="qs_tile_reboot">Redémarrer</string>
+
+    <!-- QuickSettings 4 columns -->
+    <string name="qs_four_columns_title">Montrer quatre carreaux par rangée</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibrer au toucher</string>
+    <string name="quick_settings_vibrate_summary">Vibrer lorsque vous touchez les tuiles.</string>
+
+    <!-- QuickSettings collapse panel -->
+    <string name="quick_settings_collapse_title">Fermer automatiquement le panneau</string>
+    <string name="quick_settings_collapse_summary">Fermer le panneau des paramètres rapides à bascule</string>
+
+    <!-- Navigation bar height/width -->
+    <string name="navbar_title">Bar de navigation</string>
+    <string name="navbar_dimen_title">Dimensions</string>
+    <string name="navbar_dimensions_reset_message">Réinitialiser toutes les dimentions d'\entrées dimensions par défaut ?</string>
+    <string name="navigation_bar_height_title">Hauteur de la bar de navigation</string>
+    <string name="navigation_bar_height_summary">Hauteur de la bar de navigation en mode portrait</string>
+    <string name="navigation_bar_height_landscape_title">Hauteur de la bar de navigation en paysage</string>
+    <string name="navigation_bar_height_landscape_summary">Hauteur de la bar de navigation en mode paysage.</string>
+    <string name="navigation_bar_width_title">Hauteur de la bar de navigation</string>
+    <string name="navigation_bar_width_summary">Hauteur de la barre de navigation si la barre est long d'un côté</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (par défaut)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (par défaut)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (off)</string>
+
+    <!-- Navigation bar button color -->
+    <string name="navbar_button_tint_title">Nuance du bouton de navigation</string>
+
+    <!-- Force expand notifications -->
+    <string name="notification_force_expand_title">Forcer les notifications étendus</string>
+    <string name="notification_force_expand_summary">Forcer les notifications étendus sur toutes les applications qui le supportent</string>
+
+    <!-- long press back to kill configurable timeout -->
+    <string name="kill_app_longpress_timeout_title">Temps de l'\appui long</string>
+    <string name="timeout_2000">2 secondes (par défaut)</string>
+    <string name="timeout_1500">1.5 secondes</string>
+    <string name="timeout_1000">1 seconde</string>
+    <string name="timeout_500">0.5 seconde</string>
+
+    <!-- Doze pulse (ambient display) options -->
+    <string name="doze_overwrite_value_title">Écraser la valeur</string>
+    <string name="doze_overwrite_value_summary">Permettre l'écrasement des valeurs par défauts avec la config utilisateur</string>
+
+    <string name="doze_list_mode_title">Mode doze</string>
+    <string name="doze_list_mode_summary">Option pour configurerer le mode doze</string>
+
+    <string name="doze_pulse_title">Réglages de l'\heure</string>
+    <string name="doze_pulse_duration_in_title">Se fondre dans</string>
+    <string name="doze_pulse_duration_in_summary"></string>
+
+    <string name="doze_pulse_duration_visible_title">Durée visible</string>
+    <string name="doze_pulse_duration_visible_summary"></string>
+
+    <string name="doze_pulse_duration_out_title">Disparaître</string>
+    <string name="doze_pulse_duration_out_summary"></string>
+
+    <string name="doze_pulse_on_notifications_title">Pulse doze</string>
+    <string name="doze_pulse_on_notifications_summary">Pulse display on pending notifications</string>
+
+    <string name="doze_shake_title">Pulse display on pending notifications</string>
+    <string name="doze_shake_mode_title">Mode shake</string>
+    <string name="doze_shake_mode_summary">Utiliser la valeur de capteur de shake pour déclencher l'activation</string>
+    <string name="doze_shake_mode_test_summary">Do you want to test shake sensor?</string>
+    <string name="doze_shake_mode_test_result">Appliquer la valeur actuelle ?</string>
+    <string name="doze_shake_test">Shake ton terminal maintenant</string>
+    <string name="doze_shake_it">Shake detecté !</string>
+
+    <string name="doze_shake_acc_threshold_title">Shake seuil</string>
+    <string name="doze_shake_acc_threshold_summary">Configure shake la force nécessaire pour déclencher l'activation</string>
+
+    <string name="doze_time_mode_title">Afficher horloge et date</string>
+    <string name="doze_time_mode_summary">Force showing time when there is no notification</string>
+
+    <string name="twohundred_ms">200 ms</string>
+    <string name="fivehundred_ms">500 ms</string>
+    <string name="one_second">1 s</string>
+    <string name="one_second_default">1 s (par défaut)</string>
+    <string name="onehalf_second">1.5 s</string>
+    <string name="two_second">2 s</string>
+    <string name="twohalf_second">2.5 s</string>
+    <string name="three_second">3 s</string>
+    <string name="three_second_default">3 s (par défaut)</string>
+    <string name="threehalf_second">3.5 s</string>
+    <string name="four_second">4 s</string>
+    <string name="fourhalf_second">4.5 s</string>
+    <string name="five_second">5 s</string>
+
+    <string name="veryeasy_shake">Très facile</string>
+    <string name="easy_shake">Facile</string>
+    <string name="medium_shake">Par défaut</string>
+    <string name="hard_shake">Difficile</string>
+    <string name="veryhard_shake">Très difficile</string>
+    <string name="strong_shake">Fort</string>
+
+    <string name="fully_mode">Mode complet</string>
+    <string name="pocket_shake_mode">Pocket et shake</string>
+    <string name="pocket_pulse_mode">Pocket et pulse</string>
+    <string name="pocket_only_mode">Pocket</string>
+    <string name="shake_pulse_mode">Shake et pulse</string>
+    <string name="pulse_only_mode">Pulse (par défaut)</string>
+
+    <!-- Double Tap Navbar to Sleep -->
+    <string name="double_tap_sleep_nav_bar_title">Double-tap pour veille</string>
+    <string name="double_tap_sleep_nav_bar_summary">Double-cliquez sur la barre de navigation pour mettre l'appareil en vieille</string>
+
+    <!-- Privacy guard notification -->
+    <string name="privacy_guard_notification_title">Notification</string>
+    <string name="privacy_guard_notifiation_summary">Afficher une notification si le protecteur de la vie privée est active</string>
+
+    <!-- Navring targets (enable/disable) -->
+    <string name="navigation_ring_enable_title">Activer l'anneau de navigation</string>
+
+    <!-- Battery saver -->
+    <string name="battery_saver_title">Couleur de signalisation</string>
+    <string name="battery_saver_style_reset_message">Réinitialiser la couleur d'\avertissement de l'\économiseur de batterie ?</string>
+
+    <!-- Lock Gesture settings -->
+    <!-- Security & location settings screen, setting option name -->
+    <string name="lockgesture_change_lock_pattern_label">Changer le geste de déverrouillage</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+    <string name="lockgesture_change_lock_pin_label">Changer le PIN de  déverrouillage</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+    <string name="lockgesture_need_to_unlock">Confirmer la sauvegarde de la gesture</string>
+    <!-- Do not translate. -->
+    <string name="lockgesture_need_to_unlock_footer" />
+    <!-- Security & location settings screen, change unlock gesture screen instruction if user draws incorrect pattern -->
+    <string name="lockgesture_need_to_unlock_wrong">Recommencer :</string>
+    <!-- Do not translate. -->
+    <string name="lockgesture_need_to_unlock_wrong_footer" />
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen.  This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
+    <string name="lockgesture_recording_intro_header">Draw an unlock gesture:</string>
+    <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen.  We are telling them to press the menu button to see more options or help. -->
+    <string name="lockgesture_recording_intro_footer">Press Menu for help.</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
+    <string name="lockgesture_recording_inprogress">Release finger when done.</string>
+    <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
+    <string name="lockgesture_pattern_entered_header">Gesture recorded.</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen to confirm pattern -->
+    <string name="lockgesture_need_to_confirm">Draw gesture again to confirm:</string>
+    <string name="lockgesture_pattern_confirmed_header">Your new unlock gesture:</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  When they are ready to draw it once again to confirm it, they press this button. -->
+    <string name="lockgesture_confirm_button_text">Confirme</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  If they are nto satisfied with this pattern, they click this button to redraw the pattern. -->
+    <string name="lockgesture_restart_button_text">Redraw</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. If they are supposed to enter their current gesture before being able to draw another one, and they screw up, they hit this button to try again -->
+    <string name="lockgesture_retry_button_text">Recommencer</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. Once they draw a new gesture and confirm it by drawing it again, they press this button to exit -->
+    <string name="lockgesture_continue_button_text">Continue</string>
+    <!-- Security & location settings screen, unlock screen activity title -->
+    <string name="lockgesture_settings_title">Unlock gesture</string>
+    <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
+    <string name="lockgesture_settings_enable_title">Exige un geste</string>
+    <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
+    <string name="lockgesture_settings_enable_summary">Must draw gesture to unlock screen</string>
+   <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
+    <string name="lockgesture_settings_enable_visible_pattern_title">Make gesture visible</string>
+    <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
+    <string name="lockgesture_settings_enable_power_button_instantly_locks">Bouton d'alimentation verrouille instantanément</string>
+    <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
+    <string name="lockgesture_settings_choose_lock_pattern">Réglez geste de déverrouillage</string>
+    <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
+    <string name="lockgesture_settings_change_lock_pattern">Changer le geste dedéverrouillage</string>
+    <!-- Security & location settings screen, the help instructions (an animation) caption -->
+    <string name="lockgesture_settings_help_how_to_record">Comment dessiner un geste de déverrouillage</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
+    <string name="lockgesture_too_many_failed_confirmation_attempts_header">Trop de tentatives incorrectes !</string>
+    <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
+    <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Recommencer dans <xliff:g id="number">%d</xliff:g> secondes.</string>
+    <!-- Toast shown if setting gesture was successful -->
+    <string name="lockpassword_gesture_set_toast">Gesture has been set</string>
+    <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
+    <string name="lockpassword_confirm_your_gesture_header">Confirmez votre geste</string>
+    <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
+    <string name="lockpassword_choose_your_gesture_header">Dessinez votre geste</string>
+
+    <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
+    <string name="unlock_set_unlock_gesture_title">Gesture</string>
+    <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
+    <string name="unlock_set_unlock_gesture_summary">Sécurité faible, expérimentale</string>
+
+    <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
+    <string name="unlock_set_unlock_mode_gesture">Gesture</string>
+
+    <!-- Less Notification sounds -->
+    <string name="notifications_category_title">Notifications</string>
+    <string name="less_notification_sounds_title">Sons de notification moins fréquents</string>
+    <string name="less_notification_sounds_summary">Limitez les sons de notification de chaque application pour jouer uniquement une fois par période</string>
+    <string name="less_notification_sounds_default">Comportement par défaut</string>
+    <string name="less_notification_sounds_3s">3 secondes</string>
+    <string name="less_notification_sounds_5s">5 secondes</string>
+    <string name="less_notification_sounds_10s">10 secondes</string>
+    <string name="less_notification_sounds_15s">15 secondes</string>
+    <string name="less_notification_sounds_30s">30 secondes</string>
+    <string name="less_notification_sounds_45s">45 secondes</string>
+    <string name="less_notification_sounds_1m">1 minute</string>
+    <string name="less_notification_sounds_2m">2 minutes</string>
+    <string name="less_notification_sounds_5m">5 minutes</string>
+
+    <!-- Changelog -->
+    <string name="changelog_crdroid_title">Changelog</string>
+    <string name="changelog_crdroid_error">Impossible de charger le changelog</string>
+
+    <!-- Heads Up -->
+    <string name="category_heads_up">Notifications heads up</string>
+    <string name="summary_heads_up_enabled">Notifications pop-up est activé</string>
+    <string name="summary_heads_up_disabled">Notifications pop-up est désactivé</string>
+    <string name="add_heads_up_package">Ajouter app</string>
+    <string name="add_heads_up_dnd_summary"Ne pas afficher heads up dans ces applications</string>
+    <string name="add_heads_up_blacklist_summary">Ne pas montrer heads-up à partir de ces applications</string>
+    <string name="heads_up_dnd_title">Ne pas distribuer</string>
+    <string name="heads_up_blacklist_title">Liste noire</string>
+    <string name="heads_up_disabled_notice">Pour permettre aux applications d'afficher des notifications interactifs dans une fenêtre pop-up sur votre écran, activer Heads up</string>
+    <string name="heads_up_dismiss_on_remove_title">Comportement du swipe</string>
+    <string name="heads_up_dismiss_on_remove_summary_enabled">Masquer la notification au lieu de la rejeter</string>
+    <string name="heads_up_dismiss_on_remove_summary_disabled">Masquer et rejeter la notification</string>
+
+    <!-- Heads up timeout -->
+    <string name="heads_up_time_out_title">Temps écoulé</string>
+    <string name="heads_up_time_out_summary">La notification sera affiché pour<xliff:g id="number">%d</xliff:g> seconds</string>
+    <string name="heads_up_time_out_never_summary">La notification s'affichera jusqu'à ce qu'il soit rejeté</string>
+    <string name="heads_up_time_out_2sec">2 secondes</string>
+    <string name="heads_up_time_out_3sec">3 secondes</string>
+    <string name="heads_up_time_out_4sec">4 secondes</string>
+    <string name="heads_up_time_out_5sec">5 secondes</string>
+    <string name="heads_up_time_out_6sec">6 secondes</string>
+    <string name="heads_up_time_out_7sec">7 secondes</string>
+    <string name="heads_up_time_out_8sec">8 secondes</string>
+    <string name="heads_up_time_out_9sec">9 secondes</string>
+    <string name="heads_up_time_out_10sec">10 secondes</string>
+    <string name="heads_up_time_out_never">Jamais</string>
+
+    <!-- Heads up touch outside -->
+    <string name="heads_up_touch_outside_title">Comportement au toucher extérieur</string>
+    <string name="heads_up_touch_outside_summary_enabled">Masquer les notificationsaprès avoir toucher à coté ou en pressant le bouton home</string>
+    <string name="heads_up_touch_outside_summary_disabled">Ne pas masquer les notifications après avoir toucher à coté ou en pressant le bouton home</string>
+
+    <!-- About MinimalOS -->
+    <string name="about_crdroid">À propos de MinimalOS</string>
+
+    <!-- Share MinimalOS -->
+    <string name="share_crdroid_title">Partager MinimalOS</string>
+    <string name="share_crdroid_summary">Faites connaître MinimalOS</string>
+    <string name="share_message">Découvrez tout au sujet de #MinimalOS sur @ https://plus.google.com/u/0/communities/113231455842300304229</string>
+    <string name="share_chooser_title">Partager MinimalOS</string>
+
+    <!-- Sites Minimal OS -->
+    <string name="sites_crdroid">Liens utiles</string>
+    <string name="crdroid_source_title">Github</string>
+    <string name="crdroid_source_summary">Check les sources des ROM\'s</string>
+    <string name="crdroid_google_plus_title">Google+</string>
+    <string name="crdroid_google_plus_summary">Vister la page G+ pour le support et les nouveautés</string>
+
+
+    <!-- Devices and Maintainers -->
+    <string name="device_maintainers_title">Terminaux et Mainteneurs</string>
+    <string name="device_maintainers_title_summary">Liste des terminaux supporter par MinimalOS mainteneurs</string>
+
+    <string name="mem_info">RAM</string>
+    
+    <!-- BitSyko Layers -->
+    <string name="bitsyko_layers">Layers</string>
+
+    <!-- Notification ticker -->
+    <string name="status_bar_ticker_title">Notification ticker</string>
+    <string name="status_bar_ticker_summary">Animation du texte de notification dans la barre de statut</string>
+</resources>
