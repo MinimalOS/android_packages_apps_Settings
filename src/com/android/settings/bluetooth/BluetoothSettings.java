@@ -241,9 +241,6 @@ public final class BluetoothSettings extends DeviceListPreferenceFragment implem
         boolean isAcceptAllFilesEnabled = Settings.System.getInt(getContentResolver(),
                 Settings.System.BLUETOOTH_ACCEPT_ALL_FILES, 0) == 1;
 
-        final BluetoothPan bluetoothPan = mBluetoothPan.get();
-        boolean isBluetoothTetheringEnabled = bluetoothPan != null && bluetoothPan.isTetheringOn();
-
         menu.add(Menu.NONE, MENU_ID_SCAN, 0, textId)
                 .setEnabled(bluetoothIsEnabled && !isDiscovering)
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
@@ -259,9 +256,21 @@ public final class BluetoothSettings extends DeviceListPreferenceFragment implem
         menu.add(Menu.NONE, MENU_ID_ENABLE_BLUETOOTH_TETHERING, 0,
                 R.string.bluetooth_tether_checkbox_text)
                 .setCheckable(true)
-                .setChecked(isBluetoothTetheringEnabled)
+                .setChecked(isBluetoothTetheringEnabled())
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
         super.onCreateOptionsMenu(menu, inflater);
+    }
+    
+    boolean isBluetoothTetheringEnabled() {
+       final BluetoothPan bluetoothPan = mBluetoothPan.get();
+       try {
+           if (bluetoothPan != null) {
+              return (Boolean) bluetoothPan.isTetheringOn();
+           }
+       } catch (Exception e) {
+           e.printStackTrace();
+       }
+       return false;
     }
 
     @Override
