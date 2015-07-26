@@ -17,5 +17,5 @@
 <resources>
 <!-- Dashboard corner radius-->
      <dimen name="control_corner_dashboard">0dp</dimen>
-
+     <dimen name="dashboard_border">4dp</dimen>
 </resources>
