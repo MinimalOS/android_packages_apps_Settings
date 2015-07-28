@@ -40,7 +40,7 @@
     <!-- Camera sound switch -->
     <string name="camera_sounds_title">Son de l\'obturateur de la caméra</string>
     <string name="camera_sounds_summary">Activer le système du son de l\'obturateur de la caméra</string>
-    <string name="camera_sound_warning_dialog_text">Désactiver le son de l\'obturateur de la caméra est illégal dans certaines régions! S\'il vous plaît, vérifier la législation applicable dans votre pays.</string>
+    <string name="camera_sound_warning_dialog_text">Désactiver le son de l\'obturateur de la caméra est illégal dans certaines régions ! S\'il vous plaît, vérifier la législation applicable dans votre pays.</string>
 
     <!-- Overview settings -->
     <string name="overview_pref_title">Multitâche</string>
@@ -91,7 +91,7 @@
     <string name="left_clock">Horloge à gauche</string>
     <string name="dont_show">Ne pas montrer</string>
     <string name="clock_date_display">Date</string>
-    <string name="clock_date_display_summary">Afficher la date personnalisé avant l\'horloge</string>
+    <string name="clock_date_display_summary">Afficher la date personnalisée avant l\'horloge</string>
     <string name="clock_date_style">Style de date</string>
     <string name="clock_date_format">Format de la date</string>
     <string name="clock_date_string_edittext_title">Doit être dans le format MM/dd/yy</string>
@@ -123,7 +123,7 @@
     <string name="qs_tile_reboot">Redémarrer</string>
 
     <!-- QuickSettings 4 columns -->
-    <string name="qs_four_columns_title">Montrer quatre carreaux par rangée</string>
+    <string name="qs_four_columns_title">Afficher quatre carreaux par rangée</string>
 
     <!-- QuickSettings haptic feedback -->
     <string name="quick_settings_vibrate_title">Vibrer au toucher</string>
@@ -171,7 +171,7 @@
     <string name="doze_overwrite_value_title">Écraser la valeur</string>
     <string name="doze_overwrite_value_summary">Permettre l\'écrasement des valeurs par défauts avec la config utilisateur</string>
 
-    <string name="doze_list_mode_title">>Mode Doze</string>
+    <string name="doze_list_mode_title">Mode Doze</string>
     <string name="doze_list_mode_summary">Option pour configurerer le mode Doze</string>
 
     <string name="doze_pulse_title">Réglages de l\'heure</string>
@@ -199,7 +199,7 @@
     <string name="doze_shake_acc_threshold_summary">Configurer le seuil de la secousse nécessaire pour déclencher l\'activation</string>
 
     <string name="doze_time_mode_title">Affiche l\'horloge et la date</string>
-    <string name="doze_time_mode_summary">Forcer l'affichage de l'heure quand il n'y a pas de notification</string>
+    <string name="doze_time_mode_summary">Forcer l\'affichage de l'heure quand il n'y a pas de notification</string>
 
     <string name="twohundred_ms">200 ms</string>
     <string name="fivehundred_ms">500 ms</string>
@@ -231,7 +231,7 @@
 
     <!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">Double-tap pour mettre en veille</string>
-    <string name="double_tap_sleep_nav_bar_summary">Double-tap sur la barre de navigation permet de mettre en vieille l'appareil</string>
+    <string name="double_tap_sleep_nav_bar_summary">Double-tap sur la barre de navigation permet de mettre en vieille l\'appareil</string>
 
     <!-- Privacy guard notification -->
     <string name="privacy_guard_notification_title">Notification</string>
@@ -260,7 +260,7 @@
     <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen.  This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
     <string name="lockgesture_recording_intro_header">Dessiner un geste de déverouillage :</string>
     <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen.  We are telling them to press the menu button to see more options or help. -->
-    <string name="lockgesture_recording_intro_footer">Presse le Menu pour de l'aide.</string>
+    <string name="lockgesture_recording_intro_footer">Presse le Menu pour de l\'aide.</string>
     <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
     <string name="lockgesture_recording_inprogress">Relâchez le doigt lorsque vous avez terminé.</string>
     <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
@@ -281,7 +281,7 @@
     <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
     <string name="lockgesture_settings_enable_title">Exige un geste</string>
     <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
-    <string name="lockgesture_settings_enable_summary">Doit dessiner le geste pour déverrouiller l'écran</string>
+    <string name="lockgesture_settings_enable_summary">Doit dessiner le geste pour déverrouiller l\'écran</string>
    <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
     <string name="lockgesture_settings_enable_visible_pattern_title">Rendre le geste visible</string>
     <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
@@ -297,19 +297,19 @@
     <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
     <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Recommencer dans <xliff:g id="number">%d</xliff:g> secondes.</string>
     <!-- Toast shown if setting gesture was successful -->
-    <string name="lockpassword_gesture_set_toast">Gesture à été fixé</string>
+    <string name="lockpassword_gesture_set_toast">Le geste à été fixé</string>
     <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
     <string name="lockpassword_confirm_your_gesture_header">Confirmez votre geste</string>
     <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
     <string name="lockpassword_choose_your_gesture_header">Dessinez votre geste</string>
 
     <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
-    <string name="unlock_set_unlock_gesture_title">Gesture</string>
+    <string name="unlock_set_unlock_gesture_title">Geste</string>
     <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
     <string name="unlock_set_unlock_gesture_summary">Sécurité faible, expérimentale</string>
 
     <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
-    <string name="unlock_set_unlock_mode_gesture">Gesture</string>
+    <string name="unlock_set_unlock_mode_gesture">Geste</string>
 
     <!-- Less Notification sounds -->
     <string name="notifications_category_title">Notifications</string>
@@ -331,9 +331,9 @@
     <string name="changelog_crdroid_error">Impossible de charger le changelog</string>
 
     <!-- Heads Up -->
-    <string name="category_heads_up">Notifications flottantes</string>
-    <string name="summary_heads_up_enabled">Notifications flottantes est activé</string>
-    <string name="summary_heads_up_disabled">Notifications flottantes est désactivé</string>
+    <string name="category_heads_up">Notification flottante</string>
+    <string name="summary_heads_up_enabled">Notification flottante est activé</string>
+    <string name="summary_heads_up_disabled">Notification flottante est désactivé</string>
     <string name="add_heads_up_package">Ajouter app</string>
     <string name="add_heads_up_dnd_summary">Ne pas afficher les notifications flottantes dans ces applications</string>
     <string name="add_heads_up_blacklist_summary">Ne pas montrer les notifications flottantes à partir de ces applications</string>
@@ -383,7 +383,7 @@
 
     <!-- Devices and Maintainers -->
     <string name="device_maintainers_title">Terminaux et Développeurs</string>
-    <string name="device_maintainers_title_summary">Liste des terminaux supporter par les développeur MinimalOS</string>
+    <string name="device_maintainers_title_summary">Liste des terminaux supporter par les développeurs MinimalOS</string>
 
     <string name="mem_info">RAM</string>
     
