@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <shape  android:shape="rectangle">
-
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="@color/theme_accent">
+    <item android:top="0dip" android:bottom="0dip">
+        <shape>
             <solid android:color="@color/exposed_bg_dark" />
-
+            <stroke android:width="@dimen/dashboard_border" android:color="@color/exposed_dashboard_border" />
+            <corners android:radius="@dimen/control_corner_dashboard" />
         </shape>
     </item>
-</layer-list>
+
+</ripple>
+
