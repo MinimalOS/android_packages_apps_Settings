@@ -384,11 +384,6 @@
     <!-- BitSyko Layers -->
     <string name="bitsyko_layers">Layers</string>
 
-    <!-- Notification ticker -->
-    <string name="status_bar_ticker_title">Notification ticker</string>
-    <string name="status_bar_ticker_summary">Notification text animation in the statusbar</string>
-    
     <!--  Lockscreen wallpaper  -->
     <string name="lockscreen_wallpaper_title">Lockscreen wallpaper</string>    
 </resources>
-
