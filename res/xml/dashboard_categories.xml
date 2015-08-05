@@ -115,7 +115,7 @@
                 android:targetPackage="com.lovejoy777.rroandlayersmanager"
                 android:targetClass="com.lovejoy777.rroandlayersmanager.menu" />
         </dashboard-tile>
-	
+
         <!-- Gestures -->
         <dashboard-tile
             android:id="@+id/device_specific_gesture_settings"

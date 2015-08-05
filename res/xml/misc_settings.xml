@@ -30,12 +30,6 @@
             android:title="@string/notification_drawer_title"
             android:fragment="com.android.settings.cyanogenmod.NotificationDrawerSettings" />
 
-        <!-- Heads Up-->
-        <PreferenceScreen
-            android:key="heads_up_enabled"
-            android:title="@string/category_heads_up"
-            android:fragment="com.android.settings.crdroid.HeadsUpSettings" />
-
         <!-- Expanded desktop -->
         <PreferenceScreen
             android:key="expanded_desktop"
