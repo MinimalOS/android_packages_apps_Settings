@@ -20,7 +20,7 @@
     <string name="reset">Réinitialiser</string>
     <string name="add">Ajouter</string>
     <string name="attention">Attention</string>
-    <string name="enabled">Activé</string>
+    <string name="enabled">Activer</string>
     <string name="default_string">Par défaut</string>
     <string name="choose_app">Choisir l\'application</string>
     <string name="attention">Attention</string>
@@ -30,25 +30,25 @@
 
     <!-- Sound settings -->
     <string name="advanced_sound_title">Options avancées</string>
-    <string name="sound_title">Son</string>
+    <string name="sound_title">Sons</string>
 
     <!-- Safe headset volume restore checkbox -->
     <string name="safe_headset_volume_title">Volume de casque sécurisé</string>
     <string name="safe_headset_volume_summary">Empêche d\'avoir le volume du casque trop fort lors du premier branchement</string>
-    <string name="safe_headset_volume_warning_dialog_text">L\'écoute à volume élévé pendant une longue période peut endommager votre ouïe. Désactivez-le avec prudence.</string>
+    <string name="safe_headset_volume_warning_dialog_text">L\'écoute à volume élevé pendant une longue période peut endommager votre ouie. Désactiver-le avec prudence.</string>
 
     <!-- Camera sound switch -->
     <string name="camera_sounds_title">Son de l\'obturateur de la caméra</string>
-    <string name="camera_sounds_summary">Activer le système du son de l\'obturateur de la caméra</string>
-    <string name="camera_sound_warning_dialog_text">Désactiver le son de l\'obturateur de la caméra est illégal dans certaines régions ! S\'il vous plaît, vérifier la législation applicable dans votre pays.</string>
+    <string name="camera_sounds_summary">Active le son de l\'obturateur de la caméra</string>
+    <string name="camera_sound_warning_dialog_text">Désactiver le son de l\'obturateur de la caméra est illégal dans certaines régions ! S\'il vous plait, vérifier la legislation applicable dans votre pays.</string>
 
     <!-- Overview settings -->
     <string name="overview_pref_title">Multitâche</string>
     <string name="overview_title">Multitâche</string>
     <string name="overview_settings">Paramètres du multitâche</string>
-    <string name="show_clear_all_overview_button_title">Bouton pour tout effacer dans le multitâche</string>
-    <string name="show_clear_all_overview_button_summary">Afficher le bouton pour tout effacer dans le multitâche</string>
-    <string name="overview_clear_all_location_title">Position du bouton pour tout effacer dans le multitâche</string>
+    <string name="show_clear_all_overview_button_title">Bouton pour effacer toutes les tâches</string>
+    <string name="show_clear_all_overview_button_summary">Affiche le bouton pour effacer toutes les tâches</string>
+    <string name="overview_clear_all_location_title">Position du bouton pour effacer toutes les tâches</string>
     <string name="overview_clear_all_location_top_right">En haut à droite</string>
     <string name="overview_clear_all_location_top_left">En haut à gauche</string>
     <string name="overview_clear_all_location_top_center">En haut au centre</string>
@@ -87,7 +87,7 @@
     <string name="enable_clock_weekday">Jour de la semaine</string>
     <string name="enable_clock_weekday_summary">Abrégé le jour de la semaine avant l\'heure</string>
     <string name="right_clock">Horloge à droite</string>
-    <string name="center_clock">Horloge centré</string>
+    <string name="center_clock">Horloge au centre</string>
     <string name="left_clock">Horloge à gauche</string>
     <string name="dont_show">Ne pas montrer</string>
     <string name="clock_date_display">Date</string>
@@ -131,7 +131,7 @@
 
     <!-- QuickSettings collapse panel -->
     <string name="quick_settings_collapse_title">Fermer automatiquement le panneau</string>
-    <string name="quick_settings_collapse_summary">Fermer le panneau des paramètres rapides à bascule</string>
+    <string name="quick_settings_collapse_summary">Ferme le panneau des parametres rapides lors d\'un appui sur un raccourci	</string>
 
     <!-- Navigation bar height/width -->
     <string name="navbar_title">Bar de navigation</string>
@@ -230,8 +230,8 @@
     <string name="pulse_only_mode">Impulsion (par défaut)</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Double-tap pour mettre en veille</string>
-    <string name="double_tap_sleep_nav_bar_summary">Double-tap sur la barre de navigation permet de mettre en vieille l\'appareil</string>
+    <string name="double_tap_sleep_nav_bar_title">Appui double pour mettre en vieille</string>
+    <string name="double_tap_sleep_nav_bar_summary">Un appui double sur la barre de notifications permet d'eteindre l'écran</string>
 
     <!-- Privacy guard notification -->
     <string name="privacy_guard_notification_title">Notification</string>
@@ -336,17 +336,17 @@
     <string name="summary_heads_up_disabled">Notification flottante est désactivé</string>
     <string name="add_heads_up_package">Ajouter app</string>
     <string name="add_heads_up_dnd_summary">Ne pas afficher les notifications flottantes dans ces applications</string>
-    <string name="add_heads_up_blacklist_summary">Ne pas montrer les notifications flottantes à partir de ces applications</string>
-    <string name="heads_up_dnd_title">Ne pas distribuer</string>
+    <string name="add_heads_up_blacklist_summary">Ne pas afficher les notifications flottantes de ces applications</string>
+    <string name="heads_up_dnd_title">Ne pas afficher</string>
     <string name="heads_up_blacklist_title">Liste noire</string>
     <string name="heads_up_disabled_notice">Pour permettre aux applications d\'afficher des notifications interactifs dans une notification flottante sur votre écran, activer Notifications flottantes</string>
     <string name="heads_up_dismiss_on_remove_title">Comportement du swipe</string>
     <string name="heads_up_dismiss_on_remove_summary_enabled">Masquer la notification au lieu de la rejeter</string>
-    <string name="heads_up_dismiss_on_remove_summary_disabled">Masquer et rejeter la notification</string>
+    <string name="heads_up_dismiss_on_remove_summary_disabled">Masque et rejete la notification</string>
 
     <!-- Heads up timeout -->
-    <string name="heads_up_time_out_title">Temps écoulé</string>
-    <string name="heads_up_time_out_summary">La notification sera affiché pour <xliff:g id="number">%d</xliff:g> secondes</string>
+    <string name="heads_up_time_out_title">Temps d\'affichage</string>
+    <string name="heads_up_time_out_summary">La notification sera affiché pendant <xliff:g id="number">%d</xliff:g> secondes</string>
     <string name="heads_up_time_out_never_summary">La notification s\'affichera jusqu\'à ce qu\'il soit rejeté</string>
     <string name="heads_up_time_out_2sec">2 secondes</string>
     <string name="heads_up_time_out_3sec">3 secondes</string>
@@ -360,7 +360,7 @@
     <string name="heads_up_time_out_never">Jamais</string>
 
     <!-- Heads up touch outside -->
-    <string name="heads_up_touch_outside_title">Comportement au toucher extérieur</string>
+    <string name="heads_up_touch_outside_title">Comportement lors d\'un appui extérieur</string>
     <string name="heads_up_touch_outside_summary_enabled">Masquer les notifications après avoir toucher à coté ou en pressant le bouton home</string>
     <string name="heads_up_touch_outside_summary_disabled">Ne pas masquer les notifications après avoir toucher à coté ou en pressant le bouton home</string>
 
