@@ -69,5 +69,10 @@
             android:targetPackage="com.cyanogenmod.lockclock"
             android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
         </PreferenceScreen>
+		
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:title="@string/toast_icon_title"
+            android:defaultValue="true" />
 
 </PreferenceScreen>
