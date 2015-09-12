@@ -243,7 +243,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         boolean bugreport = Settings.Secure.getInt(getContentResolver(),
                 Settings.Secure.BUGREPORT_IN_POWER_MENU, 0) != 0;
         boolean profiles = Settings.System.getInt(getContentResolver(),
-                Settings.System.SYSTEM_PROFILES_ENABLED, 1) != 0;
+                Settings.System.SYSTEM_PROFILES_ENABLED, 0) != 0;
 
         if (mProfilePref != null) {
             mProfilePref.setEnabled(profiles);

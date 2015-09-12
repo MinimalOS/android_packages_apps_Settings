@@ -86,7 +86,7 @@ public class NFCProfile extends Activity {
         UUID profileUuid = NFCProfileUtils.toUUID(payload);
 
         boolean enabled = Settings.System.getInt(getContentResolver(),
-                Settings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
+                Settings.System.SYSTEM_PROFILES_ENABLED, 0) == 1;
 
         if (enabled) {
             // Only do NFC profile changing if System Profile support is enabled

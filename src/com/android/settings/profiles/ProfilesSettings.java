@@ -180,7 +180,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         super.onStart();
         final SettingsActivity activity = (SettingsActivity) getActivity();
         mProfileEnabler = new BaseSystemSettingSwitchBar(activity, activity.getSwitchBar(),
-                Settings.System.SYSTEM_PROFILES_ENABLED, true, this);
+                Settings.System.SYSTEM_PROFILES_ENABLED, false, this);
     }
 
     @Override
@@ -244,7 +244,7 @@ public class ProfilesSettings extends SettingsPreferenceFragment
         Activity activity = getActivity();
 
         mEnabled = Settings.System.getInt(activity.getContentResolver(),
-                Settings.System.SYSTEM_PROFILES_ENABLED, 1) == 1;
+                Settings.System.SYSTEM_PROFILES_ENABLED, 0) == 1;
         activity.invalidateOptionsMenu();
 
         mAddProfileFab.setVisibility(mEnabled ? View.VISIBLE : View.GONE);
