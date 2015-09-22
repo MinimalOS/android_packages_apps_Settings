@@ -42,11 +42,5 @@
             android:key="recents_show_search_bar"
             android:title="@string/overview_show_searchbar"
             android:defaultValue="true" />
-			
-		<!-- Toast icon switcher -->
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
-           android:key="toast_icon"
-           android:title="@string/toast_icon_title"
-           android:defaultValue="true" />	
 
 </PreferenceScreen>

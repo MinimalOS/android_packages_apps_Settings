@@ -61,7 +61,7 @@
             android:title="@string/overview_pref_title"
             android:fragment="com.android.settings.xenonhd.OverviewSettings" />
 
-	    <!-- LockClock settings -->
+	<!-- LockClock settings -->
     	<PreferenceScreen
             android:key="lock_clock"
             android:title="@string/lock_clock_title">
