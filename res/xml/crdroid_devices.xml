@@ -54,19 +54,6 @@
         </PreferenceCategory>
 
         <PreferenceCategory
-             android:key="device_category_sony"
-             android:title="@string/device_category_sony_title" >
-
-             <Preference
-                 android:key="device_sony_sola"
-                 android:icon="@drawable/minimal_pepper"
-                 android:title="@string/device_sony_sola"
-                 android:summary="@string/device_sony_sola_summary"
-                 android:selectable="false" />
-
-        </PreferenceCategory>
-
-        <PreferenceCategory
              android:key="device_category_oneplus"
              android:title="@string/device_category_oneplus_title" >
 
