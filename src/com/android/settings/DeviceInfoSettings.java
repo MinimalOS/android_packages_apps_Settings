@@ -522,24 +522,29 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         try {
             BufferedReader reader = new BufferedReader(new FileReader(FILENAME_PROC_CPUINFO));
             String cpuinfo;
+	    String hardware = "";
+	    String processor = "";
 
             try {
                 while (null != (cpuinfo = reader.readLine())) {
                     if (cpuinfo.startsWith("Hardware")) {
                         Matcher m = Pattern.compile(PROC_HARDWARE_REGEX).matcher(cpuinfo);
                         if (m.matches()) {
-                            return m.group(1);
+                            hardware = m.group(1);
                         }
                     }
                     else if (cpuinfo.startsWith("Processor")) {
                         Matcher m = Pattern.compile(PROC_PROCESSOR_REGEX).matcher(cpuinfo);
                         if (m.matches()) {
-                            return m.group(1);
+                            processor = m.group(1);
                         }
                     }
-
                 }
-                return "Unknown";
+		if (!hardware.isEmpty()) {
+		    return hardware;
+		} else if (!processor.isEmpty()) {
+		    return processor;
+		} return "Unknown";
             } finally {
                 reader.close();
             }
