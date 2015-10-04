@@ -238,6 +238,9 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
         if (vibrator == null || !vibrator.hasVibrator()) {
             removePreference(KEY_POWER_NOTIFICATIONS_VIBRATE);
         }
+	if (!hasVibratorSettings(mContext)) {
+	    removePreference(KEY_VIBRATION_INTENSITY);
+	}
 
         mPowerSoundsRingtone = findPreference(KEY_POWER_NOTIFICATIONS_RINGTONE);
         String currentPowerRingtonePath =
@@ -310,6 +313,11 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
         final Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         return vibrator != null && vibrator.hasVibrator();
     }
+
+    private static boolean hasVibratorSettings(Context context) {
+        return context.getResources().getBoolean(com.android.internal.R.bool.has_vibrator_settings);
+    }
+
 
     // === Callbacks ===
 
